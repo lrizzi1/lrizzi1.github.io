@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> </title>
+		<meta charset="UTF-8">
+		<style>
+			#title {
+			  text-align: center;
+			  font-size: 4em;
+			  margin: 0 0 0 0;
+			  color:#505050;
+			}
+			#main_subtitle{
+			  position: relative;
+			  left:50%;
+			  font-size:1.5em;
+			  margin: -1em 0 0 0;
+			  color:#505050;
+			}
+			#impact_phrase{
+				font-size:2.5em;
+				position :relative;
+				top: 15em;
+				background:rgba(0, 0, 0, 0.5);
+				width: 22em;
+				background-size: auto;
+			}
+			#main_text{
+				position :absolute;
+				top: 55rem;
+				text-align: justify;
+				margin: 1rem 0 0 0;
+				font-size:2rem;
+				width: 100%;
+			}
+			body {
+			    color:#FFF;
+			    font-family: cursive;
+				background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(0, 0, 0, 0.65)),url(https://storage.googleapis.com/kondzilla-wp/2019/06/DSC00211-e1561496367847.jpg);
+			  	background-attachment: fixed;
+			  	background-size: cover;
+			  	background-position: center top;
+			}
+			p {
+				margin: 3rem;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<h1 id="title">KondZilla</h1>
+  			<p id=main_subtitle> the legend behind brazilian funk sucsess</p>
+  		</div>
+  		<div>
+  			<p id="impact_phrase"><em>"if you get it right once, it doesn't mean that you're good, you might be lucky"</em> - kondzilla </p>
+  		</div>
+  		<div id="main_text">
+  			<h3 style="font-size:3rem;text-align: center;">Trajectory</h3>
+  			<ul>
+  				<li><strong>1998</strong> he was born in Guarujá/SP</li>
+  				<li><strong>2006</strong> started compousing songs</li>
+  				<li><strong>2017</strong> created kodzilla records</li>
+  				<li><strong>2019</strong> get the Copyright for it's songs earning lots of money</li>
+  				
+  			</ul>
+  			<p>he has already produced more than 150 songs , lots of videoclips, and have more than 50 milion youtube subscibers , a third of brazilian population. He manages the carrear of many sucsessful artists such as <a href="https://pt.wikipedia.org/wiki/MC_Kevinho" target=_blank rel="noreferrer noopener">kevinho</a>, <a href="https://pt.wikipedia.org/wiki/MC_Kekel" target=_blank rel="noreferrer noopener">kekel</a>, <a href="https://pt.wikipedia.org/wiki/MC_Lan" target=_blank rel="noreferrer noopener">MC lan</a> and <a href="https://pt.wikipedia.org/wiki/Lexa_(cantora)" rel="noreferrer noopener">lexa</a>.</p>
+  			<p>If you want to know more about him , you can acess this <a href="https://pt.wikipedia.org/wiki/KondZilla" rel="noreferrer noopener">link</a>.</p>
+  			
+  		</div>
+	</body>
+</html>
