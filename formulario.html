@@ -37,7 +37,7 @@
 			#how_got_here {
 				text-align:right;
 				position:relative;
-				font-size: 0.75rem;
+				font-size: 0.65rem;
 				margin: 0 20%;
 			}
 			#message {
@@ -62,17 +62,18 @@
 		<div class="form_background">
 			<div class="words_background">
 				<h1 style="margin: 1rem 0 1.5rem">Contact form</h1>
+					<form name="submit-to-google-sheet">
 					<div>
 						<h2><label for="name">name</label></h2>
-							<input id="name" type="text" placeholder="nome" inputmode="text">
+							<input name="name" id="name" type="text" placeholder="nome" inputmode="text">
 					</div>
 					<div>
 						<h2><label for="email">e-mail</label></h2>
-							<input id="email" type="email" placeholder="example@mail.com">
+							<input name="email" id="email" type="email" placeholder="example@mail.com">
 					</div>
 					<div>
 						<h2><label for="phone">phone</label></h2>
-							<input id="phone" type="tel" placeholder="+X-XXX-XXX-XXXX">
+							<input name="phone" id="phone" type="tel" placeholder="+X-XXX-XXX-XXXX">
 					</div>
 					<div>
 						<h2>How did you get here?</h2>
@@ -113,9 +114,28 @@
 			  			</button>
 					</div>
 				</div>
+				</form>
 			</div>
 		<!--
 			exibir informacoes doq acham do rizzi dps de enviar
 		-->
+		<script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+		<script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+		<script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+		
+		<script>
+			  const scriptURL = 'https://script.google.com/macros/s/AKfycbwUu6P8d5EQMYA54PD6mYcgtoarGs5ODx0mOPxdu9Cd356vFd9q/exec'
+			  const form = document.forms['submit-to-google-sheet']
+
+			  form.addEventListener('submit', e => {
+				e.preventDefault()
+				fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+				  .then(response => console.log('Success!', response))
+				  .catch(error => console.error('Error!', error.message))
+			  })
+		</script>
 	</body>
 </html>
+
+
+
