@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>FAKEgoogle</title>
+		<link rel="stylesheet" href="reset.css">
+		<style>
+			body{
+				background-color:#FFF;
+				width:auto;
+				font-family:arial,sans-serif;
+			}
+			.top_icons {
+				width: auto;
+				justify-content: flex-end;
+				display: flex;
+				padding-right:60px;
+				position: relative;
+			}
+			.top_icons_links{
+				display: flex;
+			}
+			.top_icons_links_txt{
+				margin-left:1.5rem;
+			}
+			.top_icons_links_txt_p{
+				color: rgba(0,0,0,0.87);
+				text-decoration: none;
+				font-size: 1rem;
+			}
+			.top_icons_links_txt_p:hover{
+				opacity: .85;
+				text-decoration: underline;
+			}
+			.sqrs_links{
+				position: relative;
+				margin-right:3ex;
+				margin-left:3ex;
+			}
+			#squares_top_left{
+				opacity: 0;
+			}
+			#squares_top_left:hover{
+				opacity: 1;
+			}
+			.login_box{
+				background-color:#4285f4;
+				border-radius: 2px;
+				padding:0 1.25rem;
+				display: inline-block;
+				line-height: 2rem;
+				margin-top: 1ex;
+				cursor: default;
+			}
+			.login_text{
+				color:white;
+				font-weight: bold;
+				font-size: 1rem;
+				text-decoration: none;
+			}
+			.main_google{
+				text-align:center;
+			}
+			.img_main_google{
+				padding-top: 25ex;
+			}
+			.search_bar{
+				border: 1px solid #dfe1e5;
+				border-radius: 24px;
+				z-index: 3;
+				height: 44px;
+				margin: 0 auto;
+				width: 482px;
+				padding: 5px 0 0 16px;
+				display: flex;
+				flex: 100%;
+			}
+			.search_bar:hover{
+				box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+				border-color: rgba(223,225,229,0);
+			}
+			.search_bar_content{
+				height:30px;
+				margin:5px 0px 0px 15px;
+				
+			}
+			.search_bar_lupe{
+				height:20px;
+				weight:20px;
+				margin:10px 0 10px 0;
+			}
+			.searc_bar_input{
+				background-color: transparent;
+				border: none;
+				outline: none;
+				height: 34px !important;
+				margin:3px 0 0 20px;
+				font: 16px arial,sans-serif;
+				display: flex;
+				flex: 100%;
+				width: 330px;
+			}
+			.buttons_container{
+				padding-top:2ex;
+				display: flex;
+				justify-content:center;
+			}
+			.buttons{
+				padding: 0 16px;
+				background-color:#f5f5f5;
+				border: 1px solid #f2f2f2;
+				border-radius: 4px;
+				height:40px;
+				cursor: pointer;
+				margin: 10px 6px;
+				padding:0 16px;
+			}
+			.buttons:hover{
+				    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+					background-color: #f8f8f8;
+					border: 1px solid #c6c6c6;
+			}
+			.button_text{
+				color:#5F6368;
+				font-size: 15px;
+				text-decoration: none;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div class="top_icons">
+			<div class="top_icons_links">
+				<div class="top_icons_links_txt">
+					<p><a href="https://mail.google.com/mail" class="top_icons_links_txt_p">Gmail</a></p>
+				</div>
+				<div class="top_icons_links_txt">
+					<p><a href="https://www.google.com.br/imghp" class="top_icons_links_txt_p">Images</a></p>
+				</div>
+			</div>
+			<div style="padding-top:2ex">
+				<img src="sqrs2.jpg" alt="google options" class="sqrs_links" style="z-index: 1;">
+				<a href="https://about.google/intl/products/"><img src="sqrs1.jpg" alt="" id="squares_top_left" class="sqrs_links" style="z-index: 2;position: absolute;right:17.2ex;"></a>
+			</div>
+			<div>
+				<a href="https://accounts.google.com/signin"  class="login_box login_text" >
+					Login
+				</a>
+			</div>
+		</div>
+		<div class="main_google">
+			<div class="img_main_google">
+				<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+			</div>
+			<div class="search_bar">
+				<div id="lupe">
+					<img src="lupa.png" class="search_bar_lupe">
+				</div>
+				<div id="search_bar">
+					  <input class="searc_bar_input">
+				</div>
+				<div id="tools">
+					<img src="keyboard.png" class="search_bar_content">
+				</div>
+				<div id="microphone">
+					<img src="mic.png" class="search_bar_content">
+				</div>
+			</div>
+			<div class="buttons_container">
+				<div class="buttons">
+					<p style="margin:10px 0 0 0;"><a href="https://www.google.com/search?q=the+answer+to+life+the+universe+and+everything" class="button_text">google search</a></p>
+				</div >
+				<div class="buttons">
+					<p style="margin:10px 0 0 0;"><a href="https://youtu.be/3yd_eoMOvqk?t=35" class="button_text">feeling lucky</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<p> </p>
+		</div>
+	</body>
+</html>
+
